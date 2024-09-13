@@ -13,6 +13,8 @@
 		0475A1412C8D069F00060DCB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0475A1402C8D069F00060DCB /* Base */; };
 		0475A1492C8D357200060DCB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475A1482C8D357200060DCB /* SearchViewController.swift */; };
 		0475A14B2C8D35B900060DCB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475A14A2C8D35B900060DCB /* FavoritesViewController.swift */; };
+		0475A14D2C93C96F00060DCB /* GBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475A14C2C93C96F00060DCB /* GBButton.swift */; };
+		0475A14F2C93CC7B00060DCB /* GBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475A14E2C93CC7B00060DCB /* GBTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0475A1422C8D069F00060DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0475A1482C8D357200060DCB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0475A14A2C8D35B900060DCB /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		0475A14C2C93C96F00060DCB /* GBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBButton.swift; sourceTree = "<group>"; };
+		0475A14E2C93CC7B00060DCB /* GBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		0475A1332C8D069E00060DCB /* GitHubBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				0475A1342C8D069E00060DCB /* AppDelegate.swift */,
-				0475A1362C8D069E00060DCB /* SceneDelegate.swift */,
-				0475A1482C8D357200060DCB /* SearchViewController.swift */,
-				0475A14A2C8D35B900060DCB /* FavoritesViewController.swift */,
+				0475A1552C93CEA700060DCB /* Application */,
+				0475A1542C93CEA000060DCB /* Models */,
+				0475A1502C93CE6A00060DCB /* Views */,
+				0475A1522C93CE8700060DCB /* Controllers */,
+				0475A1422C8D069F00060DCB /* Info.plist */,
 				0475A13D2C8D069F00060DCB /* Assets.xcassets */,
 				0475A13F2C8D069F00060DCB /* LaunchScreen.storyboard */,
-				0475A1422C8D069F00060DCB /* Info.plist */,
 			);
 			path = GitHubBuddy;
+			sourceTree = "<group>";
+		};
+		0475A1502C93CE6A00060DCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0475A1512C93CE7800060DCB /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0475A1512C93CE7800060DCB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0475A14E2C93CC7B00060DCB /* GBTextField.swift */,
+				0475A14C2C93C96F00060DCB /* GBButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0475A1522C93CE8700060DCB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0475A1532C93CE9100060DCB /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0475A1532C93CE9100060DCB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0475A1482C8D357200060DCB /* SearchViewController.swift */,
+				0475A14A2C8D35B900060DCB /* FavoritesViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0475A1542C93CEA000060DCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0475A1552C93CEA700060DCB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0475A1362C8D069E00060DCB /* SceneDelegate.swift */,
+				0475A1342C8D069E00060DCB /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0475A14F2C93CC7B00060DCB /* GBTextField.swift in Sources */,
 				0475A1492C8D357200060DCB /* SearchViewController.swift in Sources */,
 				0475A1352C8D069E00060DCB /* AppDelegate.swift in Sources */,
 				0475A14B2C8D35B900060DCB /* FavoritesViewController.swift in Sources */,
+				0475A14D2C93C96F00060DCB /* GBButton.swift in Sources */,
 				0475A1372C8D069E00060DCB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
